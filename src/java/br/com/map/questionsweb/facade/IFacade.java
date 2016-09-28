@@ -6,6 +6,7 @@
 package br.com.map.questionsweb.facade;
 
 import br.com.map.questionsweb.model.Professor;
+import java.util.List;
 
 /**
  *
@@ -18,6 +19,7 @@ public interface IFacade {
     public void editarProfessor(Professor p);
     
     public void excluirProfessor(Professor p);
+    
     
     
 }

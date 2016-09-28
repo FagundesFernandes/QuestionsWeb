@@ -6,18 +6,27 @@
 package br.com.map.questionsweb.model;
 
 import java.util.ArrayList;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author fagundes
  */
+@Entity
 public class Disciplina {
-    
+    @Id
     private long id;
     private int periodo;
     private String nome;
+    @ManyToMany
     private ArrayList<Professor> professores;
+    @OneToMany
     private ArrayList<Questoes> questoes;
+    @ManyToOne
     private Curso curso;
     
     public Disciplina(){

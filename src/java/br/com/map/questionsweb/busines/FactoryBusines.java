@@ -5,6 +5,7 @@
  */
 package br.com.map.questionsweb.busines;
 
+import br.com.map.questionsweb.facade.Facade;
 import br.com.map.questionsweb.model.Professor;
 
 /**
@@ -22,5 +23,5 @@ public class FactoryBusines {
         }
         return professorBusines;
     }
-    
+ 
 }

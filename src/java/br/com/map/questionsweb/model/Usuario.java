@@ -6,16 +6,22 @@
 package br.com.map.questionsweb.model;
 
 import java.util.ArrayList;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author fagundes
  */
+@Entity
 public class Usuario {
     
+    @Id
     private long id;
     private String login;
     private String senha;
+    @OneToMany
     private ArrayList<Professor> professores;
     
     public Usuario(){

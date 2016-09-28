@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -22,7 +24,9 @@ public class Professor implements Serializable {
     private long id;
     private String nome;
     private int matricula;
+    @ManyToMany
     private ArrayList<Disciplina> disciplina;
+    @ManyToOne
     private Usuario usuario;
     
     public Professor(){

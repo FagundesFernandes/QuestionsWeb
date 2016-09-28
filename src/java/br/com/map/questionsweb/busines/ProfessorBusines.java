@@ -31,6 +31,10 @@ public class ProfessorBusines {
         return professorDao;
     }
     
+    public void setProfessorDao(ProfessorDaoImp professorDaoImp) {
+        this.professorDao = professorDao;
+    }
+    
      public void save(Professor professor){
         professorDao.save(professor);
     }
